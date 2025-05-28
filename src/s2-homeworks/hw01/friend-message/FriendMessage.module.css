@@ -1,31 +1,69 @@
 .friendMessage {
-
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 30px;
 }
 
 .friendImageAndText {
-
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
 }
 
 .friendImageAndText img {
-
+    width: 48px;
+    height: 48px;
 }
 
 .friendText {
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+    background-color: #f5f7fb;
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    padding: 8px 14px;
 }
 
 .friendText:after {
-
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent #f5f7fb transparent;
 }
 
 .friendName {
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
 }
 
 .friendMessageText {
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .friendTime {
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    bottom: -12px; /* Расположим под аватаркой */
+    right: 50%;
+    transform: translateX(50%); /* Центрируем по горизонтали */
 }
